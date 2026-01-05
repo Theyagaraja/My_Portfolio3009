@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0d0f14;
+  color: #e5e5e5;
+  line-height: 1.8;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0d0f14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
+  border-bottom: 1px solid #1e1e1e;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.navbar nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: 0.9rem;
+}
+
+.resume-btn {
+  border: 1px solid #fff;
+  padding: 6px 12px;
+}
+
+.hero {
+  padding: 160px 10% 120px;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.hero h2 {
+  font-weight: 400;
+  margin: 15px 0;
+  color: #bdbdbd;
+}
+
+.hero p {
+  max-width: 600px;
+  color: #9a9a9a;
+}
+
+.section {
+  padding: 90px 10%;
+}
+
+.section.alt {
+  background: #151820;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skills li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.item {
+  margin-bottom: 35px;
+}
+
+.item span {
+  font-size: 0.9rem;
+  color: #9a9a9a;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.cert-grid img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#certModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#certModal img {
+  max-width: 85%;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #777;
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.cert-grid img {
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cert-grid img:hover {
+  transform: scale(1.03);
+}
+
+#certModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+#certModal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+/* CERTIFICATE FLIP FIX */
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.certificate-flip {
+  perspective: 1200px;
+}
+
+.certificate-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.certificate-flip:hover .certificate-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.certificate-flip-front,
+.certificate-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.certificate-flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.certificate-flip-back {
+  background: #151820;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.cert-btn {
+  margin-top: 15px;
+  padding: 8px 14px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}

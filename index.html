@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Theyagaraja S | Software Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">TS</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+    <a href="resume.pdf" class="resume-btn" target="_blank">Resume</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Theyagaraja S</h1>
+  <h2>Aspiring Software & AI Engineer</h2>
+  <p>
+    Computer Science & Engineering student focused on
+    building scalable software systems and intelligent applications.
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<h3>About</h3>
+<p>
+Aspiring software engineer with hands-on experience in programming,
+full-stack development fundamentals, databases, and AI-based systems.
+Actively seeking opportunities to grow in real-world software environments.
+</p>
+<p>
+<strong>B.Tech Computer Science & Engineering</strong><br>
+SRM Institute of Science and Technology<br>
+2023 – 2027
+</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+<h3>Skills</h3>
+<ul class="skills">
+<li>Languages: C, Python, C++, JavaScript</li>
+<li>Web: HTML, CSS</li>
+<li>Databases: PostgreSQL, MongoDB</li>
+<li>Domains: Artificial Intelligence, IoT</li>
+<li>Tools: GitHub, VS Code, DBeaver</li>
+<li>Soft Skills: Problem Solving, Teamwork</li>
+</ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+<h3>Experience</h3>
+
+<div class="item">
+<h4>Software Development Intern (Ongoing)</h4>
+<span>Paragon Dynamics Info Systems Pvt. Ltd – Chennai</span>
+<p>
+Working on full-stack web applications using HTML, CSS, JavaScript,
+PostgreSQL, and DBeaver while gaining exposure to production-level workflows.
+</p>
+</div>
+
+<div class="item">
+<h4>Web & UI Design Intern</h4>
+<span>Skill Academia – Kolkata | Feb 2024 – Apr 2024</span>
+<p>
+Trained in web design, UI/UX, graphic design, digital marketing,
+public speaking, and usage of AI tools.
+</p>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section alt">
+<h3>Projects & Research</h3>
+
+<div class="item">
+<h4>Real-Time Multimodal Emotion Recognition in E-Learning</h4>
+<p>
+Developed a CNN-LSTM based system combining facial and speech emotion
+recognition using MFCC features, achieving ~94% accuracy.
+</p>
+</div>
+
+<div class="item">
+<h4>IoT-Based Temperature Monitoring System</h4>
+<p>
+Built an Arduino-based IoT system for real-time temperature monitoring
+and sensor data analysis.
+</p>
+</div>
+
+<div class="item">
+<h4>Smart Health Ledger (Research Publication)</h4>
+<p>
+Co-authored a Scopus-indexed journal paper proposing a blockchain-based
+framework for healthcare finance systems.
+</p>
+<a href="https://www.jneonatalsurg.com/index.php/jns/article/view/6340" target="_blank">
+View Publication
+</a>
+</div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="cert-grid">
+
+    <!-- IBM Certificates -->
+    <div class="cert-card" onclick="openCert('certificates/ibm-cloud-intro.jpg')">
+      <img src="certificates/ibm-cloud-intro.jpg" alt="IBM Cloud Computing">
+      <h4>Introduction to Cloud Computing</h4>
+      <p>IBM · Coursera</p>
+    </div>
+
+    <div class="cert-card" onclick="openCert('certificates/ibm-generative-ai.jpg')">
+      <img src="certificates/ibm-generative-ai.jpg" alt="IBM Generative AI">
+      <h4>Generative AI for Data Analytics</h4>
+      <p>IBM · Coursera</p>
+    </div>
+
+    <!-- AWS -->
+    <div class="cert-card" onclick="openCert('certificates/aws-academy-cloud.jpg')">
+      <img src="certificates/aws-academy-cloud.jpg" alt="AWS Cloud Foundations">
+      <h4>AWS Academy Cloud Foundations</h4>
+      <p>AWS Academy</p>
+    </div>
+
+    <!-- University of London -->
+    <div class="cert-card" onclick="openCert('certificates/uol-maths-cs.jpg')">
+      <img src="certificates/uol-maths-cs.jpg" alt="Mathematics for CS">
+      <h4>Mathematics for Computer Science</h4>
+      <p>University of London · Coursera</p>
+    </div>
+
+    <!-- Packt Courses -->
+    <div class="cert-card" onclick="openCert('certificates/packt-backend-api.jpg')">
+      <img src="certificates/packt-backend-api.jpg" alt="Backend Development">
+      <h4>Backend Development & API Creation</h4>
+      <p>Packt · Coursera</p>
+    </div>
+
+    <div class="cert-card" onclick="openCert('certificates/packt-frontend-react.jpg')">
+      <img src="certificates/packt-frontend-react.jpg" alt="Frontend with React">
+      <h4>Frontend Development with React</h4>
+      <p>Packt · Coursera</p>
+    </div>
+
+    <div class="cert-card" onclick="openCert('certificates/packt-advanced-frontend.jpg')">
+      <img src="certificates/packt-advanced-frontend.jpg" alt="Advanced Frontend">
+      <h4>Advanced Frontend Development & Deployment</h4>
+      <p>Packt · Coursera</p>
+    </div>
+
+    <!-- MERN Specialization -->
+    <div class="cert-card" onclick="openCert('certificates/mern-specialization.jpg')">
+      <img src="certificates/mern-specialization.jpg" alt="MERN Stack">
+      <h4>MERN Stack Full-Stack Specialization</h4>
+      <p>Packt · Coursera</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATE POPUP -->
+<div id="certModal" class="cert-modal" onclick="closeCert()">
+  <img id="certModalImg">
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+<h3>Contact</h3>
+<p>Email: soundartheyagaraja@gmail.com</p>
+<p>Phone: +91 9597845336</p>
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/theyagaraja-s" target="_blank">
+linkedin.com/in/theyagaraja-s
+</a>
+</p>
+</section>
+
+<footer>
+© 2025 Theyagaraja S
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
